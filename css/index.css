@@ -1,0 +1,38 @@
+* {
+    font-family: Sahel;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.rtl_dir {
+    direction: rtl;
+}
+
+.navbar {
+    z-index: 2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 8vh;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    box-shadow: 5px 0 10px 1px gray;
+}
+
+.main_content {
+    margin-right: 350px;
+    margin-top: 10vh;
+}
+
+.card {
+    float: right;
+    margin: 15px;
+}
