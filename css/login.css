@@ -17,6 +17,37 @@
   background-position: left calc(.375em + .1875rem) center;
 }
 
+
+.nav-pills .nav-link {
+  transition: background-color 200ms;
+  color: #394149;
+}
+
+.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+  outline: none;
+  background-color: rgb(219, 227, 233, 0.37);
+}
+
+.nav-pills .nav-link:active {
+  background-color: rgb(219, 227, 233, 0.57);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #6c757d;
+}
+
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus,
+.nav-pills .show>.nav-link:hover,
+.nav-pills .show>.nav-link:focus {
+  background-color: #5c656d;
+}
+
+.nav-pills .nav-link.active:active,
+.nav-pills .show>.nav-link:active {
+  background-color: #505961;
+}
+
 ul {
   padding: 0;
 }
@@ -33,8 +64,30 @@ html, body {
   margin: -25px 0;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 575.5px) {
+  .hero-container {
+    display: none;
+  }
+}
+
+.hero-slogan {
+  z-index: 1;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  text-align: center;
+}
+
 .hero-image {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
